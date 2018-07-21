@@ -5,10 +5,11 @@ import "testing"
 func TestBuilderPattern(t *testing.T) {
 	manufacturingComplex := ManufacturingDirector{}
 
+	safsdfhello
+
 	carBuilder := &CarBuilder{}
 	manufacturingComplex.SetBuilder(carBuilder)
 	manufacturingComplex.Construct()
-
 	car := carBuilder.GetVehicle()
 
 	if car.Wheels != 4 {
